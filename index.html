@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS//all.min.css">
+    <link rel="stylesheet" href="CSS//fontawesome.min.css">
+    <script src="JS/jquery-3.7.1.min_2.js"></script>
+    <script src="JS/Js.js"></script>
+
+</head>
+
+<body>
+    <!-------Navigation bar--------->
+    <nav>
+        <label class="logo">FoM</label>
+        <ul>
+            <a href="#" id="nav1">
+                <li>Register</li>
+            </a>
+            <a href="#" id="nav2">
+                <li>Log in</li>
+            </a>
+        </ul>
+    </nav>
+
+    <section>
+        <!--Log In-->
+        <div id="login-box" class="form-box">
+            <div class="form-value">
+                <form action="Html.html">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-eye"></i>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                        
+                    </div>
+                    <div class="forgot">
+                        <label for="Remember">
+                            <input id="Remember" type="checkbox">Remember me
+                            <a id="newpass" href="#newpassword-box">Forgot password</a></label>
+                    </div>
+                    <button type="submit">Log in</button>
+                    <div class="register">
+                        <p>Don't have an account<a class="reg" href="#registration-box">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Forgot Password-->
+        <div id="newpassword-box" class="form-box">
+            <div class="form-value">
+                <form action="#">
+                    <h2>Create a new password</h2>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required>
+                        <label for="">Current Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required>
+                        <label for="">New Password</label>
+                    </div>
+                    <div class="forgot">
+                        <label for="pass">
+                            <input id="pass" type="checkbox" !important>I accept the terms and agreements
+                            <a href="#"></a></label>
+                    </div>
+                    <button type="submit">Create New Password</button>
+                    <div class="register">
+                        <p><a id="log" href="#login-box">Log In</a><a class="reg" href="#registration-box">Sign In</a>
+                        </p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Registration-->
+        <div id="registration-box" class="form-box">
+            <div class="form-value">
+                <form action="#">
+                    <h2>Registration</h2>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" required>
+                        <label for="">First Name</label>
+
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" required>
+                        <label for="">Last Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forgot">
+                        <label for="Agree">
+                            <input id="Agree" type="checkbox" required !important>I agree to the terms and conditions
+
+                    </div>
+                    <button type="submit">Register</button>
+                    <div class="register">
+                        <p>Already have an account<a id="log" href="#login-box">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

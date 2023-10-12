@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+body{
+     background: url(../IMG/102810.jpg) no-repeat; 
+    background-size: cover;
+    height: calc( 100vh );
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+nav ul{
+    text-align: end;
+    position: relative;
+    top: -80px;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 40px;
+    line-height: 0px;
+}
+button{ 
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 7px 10px;
+    border-radius: 3px;
+    padding: 10px;  
+}
+nav a{
+    text-transform: uppercase;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: blue;
+    color:white;
+    transition: .7s;
+}
+a:hover{
+    border: 1px solid white ;
+    transition: .6s;
+}
+
+nav #icon{
+    cursor: pointer;
+    margin-right: 40px;
+
+}
+nav label i{
+    font-size: 2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 20px;
+    display: none;
+    color: white;
+}
+nav label i:hover{
+    color: brown;
+}
+/*Profile Display*/
+.profile_box{
+    position: fixed;
+    right: 30px;
+}
+
+.profile_action{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border: 2px solid ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile_action:hover{
+    color: black;
+    border-color: white;
+    transition: all ease-in .5s;
+    background-color: white;
+
+}
+.profile_action i{
+    font-size: 2rem;
+    padding: 10px 11px;
+    color: white;
+}
+.profile_action i:hover{
+    color: black;
+}
+.profile_box .profile_menu{
+     width: 310px;
+     padding: 30px;
+     background-color: rgb(68, 68, 68);
+     backdrop-filter: blur(30px);
+     position: absolute;
+     border-radius: 10px;
+     right:0;
+     top:75px;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s;
+}
+.profile_box .profile_menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+.profile_menu::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: rgb(68, 68, 68);
+    position: absolute;
+    top: -10px;
+    right:19px;
+    transform: rotate(45deg);
+    border-top-left-radius: 3px;
+}
+.profile_menu .profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile_menu .profile i{
+    font-size: 2rem;
+    padding: 10px ;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    user-select: none;
+    color: white;
+}
+.profile_menu .profile .profile_info{
+    margin-left: 15px;
+}
+.profile_menu .profile h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.profile_menu .profile p{
+    color: rgb(156, 144, 144);
+    font-size: 16px;
+    font-weight: 400px;
+}
+.profile_menu .profile_btn{
+    width: 250px;
+    height: 53px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: all ease-in-out;
+}
+.profile_menu .profile_btn:hover{
+    background-color: brown;
+    transition: all ease-in-out .5s;
+}
+.profile_menu .profile_btn i{
+    width: 20px;
+    margin-right: 5px;
+    user-select: none;
+}
+.profile_menu ul li{
+    list-style: none;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile_menu ul li:last-child{
+    margin: 0;
+}
+.profile_menu ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.profile_menu ul li a:hover{
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+.profile_menu ul li i{
+     color: white;
+     margin-right: 10px;
+     user-select: none;
+}
+nav label .close{
+    opacity: 0;
+    visibility: hidden;
+}
+@media (min-width:1448px){
+    
+    nav label i{
+        opacity: 0;
+        pointer-events:none;
+    }
+   
+}
+@media (max-width:1048px){
+    label.logo{
+        font-size: 28px;
+    }
+    nav label i{
+        display: none;
+    }
+    nav li{
+        margin: 40px 10px;
+    }
+}
+@media (max-width:909px){
+    .click{
+        display: block;
+    }
+    .profile_box{
+        top: 5px;
+       margin-right: -20px;
+
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        background: rgb(13, 61, 105);
+        text-align: center;
+        transition: all .5s ease-in-out;
+        
+    }
+    nav li{
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+
+    }
+    nav a{
+        font-size: 20px;
+        text-decoration:none ;
+
+    }
+    a:hover{
+        border: none;
+        color:brown;
+
+    }
+    nav ul.show{
+        left:0;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "connect1",
+      "database": "C:\\Users\\fom\\Downloads\\Compressed\\Files\\Files\\home\\coder\\project\\Chinook_MySql.sql"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}

@@ -15,20 +15,19 @@ body{
     background-color: gray;
     color:white;
 }
-/*footer*/
-footer{
-    height: 20px;
-    width: 100%;
-} 
 
-.foot-flex{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
 
-footer .foot2 p{
-    color: rgb(99, 32, 32);
-    font-style: oblique;
-    font-weight: 700;
-}
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
